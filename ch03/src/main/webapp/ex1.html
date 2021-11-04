@@ -21,13 +21,13 @@ body {
 	padding-bottom: 10px;
 	padding-left: 10px;
 	
-	padding: 10px 20px 30px 40px; 	/*T R B L*/
-	padding: 10px 20px 30px			/*T, (R, L), B*/
-	padding: 10px 20px;				/*(T, B) (L, R)*/
-	padding: 10px;					/*(T, R, B, L)*/
+	padding: 10px 20px 30px 40px; 	/* T R B L */
+	padding: 10px 20px 30px			/* T, (R, L), B */
+	padding: 10px 20px;				/* (T, B) (L, R) */
+	padding: 10px;					/* (T, R, B, L) */
 	
-	margin: 100px auto 300px;
 	margin: 100px auto;
+	margin-top: 100px auto;
 	
 }
 
@@ -36,12 +36,28 @@ body {
 
 window.onload = function(){//돔이 다 로딩된 후에 실행
 
-	elDiv = document.getElementById("box");
+	var elDiv = document.getElementById("box");		//var달면 함수범위, 안달면 전역범위 var이 좋음 ( for문안에서 var은 함수범위 x)
 	elDiv.onclick = function() {
-			console.log("click");
+		var intervalId = setInterval(function(){
+			var marginTop = parseInt(elDiv.style.marginTop);
+			if(marginTop < -80){
+				clearInterval(intervalId);
+				return;
+			}
+			
+			marginTop -= 10;
+			elDiv.style.marginTop = marginTop + "px";
+			console.log(marginTop);
+		},100);
 	}
-	console.log(elDiv);	
 };
+
+var count = 0;
+
+
+//setInterval
+//console.log("!!!!");
+
 
 
 </script>
@@ -50,7 +66,7 @@ window.onload = function(){//돔이 다 로딩된 후에 실행
 
 <body>
 
-<div id="box" class="box1">
+<div id="box" class="box1" style ="margin-top:200px">
 CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이 어떻게 적용되는지 확인해 보겠습니다.
 </div>
 
