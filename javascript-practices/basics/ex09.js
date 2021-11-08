@@ -19,6 +19,9 @@ var o1 = new MyObject("둘리", 10);
 o1.school = 'DONGSOE';
 o1.info();
 
+s = "info"; 
+o1[s]();            //string을 호출하고싶을때
+
 // MyObject 객체 생성2
 var o2 = new MyObject("마이콜", 20);
 o2.info();
