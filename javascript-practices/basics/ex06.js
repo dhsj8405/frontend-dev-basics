@@ -25,7 +25,6 @@ var MyObject = function(name) {
 var o = new MyObject('둘리');
 console.log(o.name);
 
-
 // 생성방법2
 // {} 리터럴 사용하는 방법
 var o2 = {};
