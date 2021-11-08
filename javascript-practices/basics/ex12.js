@@ -43,11 +43,11 @@ a.insert(2, ['a','b','c']); // 기대하는것 :[1, 2, 'a', 'b', 'c', 3]
 console.log(a);             // 결과 : [1, 2, ['a','b','c'], 3]
 
 
-var f = function(param){
-    console.log(this.name + ":" + param);
-}
-//f();
-var o = {name: "kickscar"};
-f.call(o, "kickscar@gmail.com");
-
-f.apply(o);     //파라미터 못 넣음
+//삭제하심
+// var f = function(param){
+//     console.log(this.name + ":" + param);
+// }
+// //f();
+// var o = {name: "kickscar"};
+// f.call(o, "kickscar@gmail.com");
+// f.apply(o);     //파라미터 못 넣음

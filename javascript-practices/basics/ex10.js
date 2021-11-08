@@ -66,15 +66,15 @@ for(prop in o5){
     console.log(prop);
 } 
 
-console.log("===========");
+// 삭제하심
+// console.log("===========");
+// a5.forEach(function(e, index){
+//     console.log(index+":"+e);
+// });
 
-a5.forEach(function(e, index){
-    console.log(index+":"+e);
-});
-
-Array.prototype.forEach.call(o5, function(e, index){
-    // apply: 파라미터가없는 메소드의 this를바꾸고싶을때 호출해서 o5를 넣어줌
-    //call은 파라미터 뒤에 추가
-    console.log(index+":"+e);
-});
+// Array.prototype.forEach.call(o5, function(e, index){
+//     // apply: 파라미터가없는 메소드의 this를바꾸고싶을때 호출해서 o5를 넣어줌
+//     //call은 파라미터 뒤에 추가
+//     console.log(index+":"+e);
+// });
 
