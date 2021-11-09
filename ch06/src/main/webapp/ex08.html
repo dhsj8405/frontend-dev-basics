@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+
+window.addEventListener("load", function(){
+	var imgElement = document.createElement("img");
+	
+	imgElement.src = 'https://mblogthumb-phinf.pstatic.net/20141211_264/eunsam21_1418282851840rB3Bb_JPEG/NaverBlog_20141206_220104_07.jpg?type=w2';
+	imgElement.style.width = "200px";
+	imgElement.alt = "바비힐";
+	imgElement.title = "바비힐사진임";
+	imgElement['data-no'] = 10;	// 비표준 속성
+	setTimeout(function(){
+		document.body.appendChild(imgElement);	//element를 붙일땐 appendchilde
+		console.log(document.getElementById('h')['data-no']);
+	}, 3000);
+});
+</script>
+<body>
+	<h1 id = 'h' data-no = '10'>DOM(Document Object Model)</h1>
+	<h2>3. HTML Element 속성 조작하기1</h2>	
+	
+	
+
+</body>
+
+</html>
