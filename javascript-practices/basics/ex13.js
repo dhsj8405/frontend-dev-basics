@@ -27,15 +27,14 @@ var str7 = "string1 string2 string3";
 var index = str7.indexOf('string4');
 console.log(index); //찾지 못하면 -1
 
-var str8 = str7.substr(10); // 10th ~ end
+var str8 = str7.substr(10); // 인덱스 10부터 ~ end
 console.log(str8);
 
 var str9 = str7.substr(10, 3); // 10번째부터 3개
 console.log(str9);
 
-var str10 = str7.substring(10, 13); // (10번째, last index-1)
+var str10 = str7.substring(10, 13); // (10번째, 12번째)
 console.log(str10);
-
 var a = str7.split(" ");
 console.log(a);
 

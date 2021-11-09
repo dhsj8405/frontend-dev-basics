@@ -7,15 +7,15 @@ var url1 = "http://www.mysite.com/user?name=둘리&no=10";
 
 // 1. escape: URL 전부 엔코딩 (x) deprecated
 var url2 =  escape(url1);
-console.log(url2);
+console.log("url2:"+url2);
 
 // 2. encodeURI: parameter만 encoding (사용성o)
 var url3 = encodeURI(url1);
-console.log(url3);
+console.log("url3:"+url3);
 
 // 3. encodeURIComponent: 값만 엔코딩 해야하는 경우 (사용성o)
 var url4 = encodeURIComponent(url1); // 안 좋은 사용예
-console.log(url4);
+console.log("url4:"+url4);
 
 // 만들어야 할 URL
 // http://mysite.com/user?no=10&name=둘리&email=kickscar@gmail.com
@@ -38,7 +38,7 @@ var params = {
 }
 
 var url5 = url + "?" + toQueryString(params);
-console.log(url5);
+console.log("url5:"+url5);
 /*
 $.ajax({
     url: url,
