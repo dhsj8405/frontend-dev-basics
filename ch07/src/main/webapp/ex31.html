@@ -8,7 +8,7 @@ $( function() {
 	setTimeout(function(){
 		$("h2, p")
 			.wrapAll("<div>")
-			.parent()			//traverse 위에 호출한 h2,p가 안나옴
+			.parent()			//traverse 위에 호출한 h2,p가 안나옴	: 호출한 h2,p위의 div에 1px solid 선을 나타내기위함
 			.css({
 				border: "1px solid #ccc",
 				width: "200px"
