@@ -15,5 +15,11 @@ public class ApiController {
 	public String html() {
 		return "html";
 	}
+	
+	@RequestMapping("/xml")
+	public String xml() {
+		return "xml";
+	}
+
 
 }

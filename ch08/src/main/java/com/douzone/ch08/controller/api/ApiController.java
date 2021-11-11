@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.douzone.ch08.controller.vo.GuestbookVo;
+import com.douzone.ch08.controller.dto.XmlResult;
 
 @Controller
 @RequestMapping("/api")
@@ -26,12 +26,12 @@ public class ApiController {
 	@ResponseBody
 	@RequestMapping("/xml")
 	public Object xml() {
-		GuestbookVo vo = new GuestbookVo();
+		XmlResult.GuestbookVo vo = new XmlResult.GuestbookVo();
 		vo.setNo(1L);
 		vo.setName("둘리");
 		vo.setMessage("호이~");
 		
-		return vo;
+		return XmlResult.success(vo);
 	}
 	
 }
