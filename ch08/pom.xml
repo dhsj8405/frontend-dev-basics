@@ -46,7 +46,7 @@
 			<version>2.9.8</version>
 		</dependency>
 		
-		<!-- jaxb -->
+		<!-- jaxb : xmlAPI -->
 		<dependency>
 		    <groupId>javax.xml.bind</groupId>
 		    <artifactId>jaxb-api</artifactId>
