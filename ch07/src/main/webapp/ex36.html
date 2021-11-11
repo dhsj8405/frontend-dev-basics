@@ -23,7 +23,7 @@ $(function(){
 	$("#btn-change").click(function(){
 		// 랜덤 변수
 		var result = Math.floor( Math.random() * (images.length));
-		var imgurl = "images/" + images[result].substring(images[result].indexOf(":")+1)
+		var imgurl = "images/" + images[result].split(":")[1];
 		
 		$("div img") .attr("src", imgurl)
 	});
@@ -41,7 +41,7 @@ $(function(){
 
 			interval = setInterval(function(){
 				var result = Math.floor( Math.random() * (images.length));
-				var imgurl = "images/" + images[result].substring( images[result].indexOf(":") + 1 )
+				var imgurl = "images/" + images[result].split(":")[1];
 				
 				$("div img") .attr("src", imgurl)
 			},500);
