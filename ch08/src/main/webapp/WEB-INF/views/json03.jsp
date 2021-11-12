@@ -41,7 +41,7 @@ $(function(){
 </script>
 </head>
 <body>
-	<h1>AJAX Test - xml Format Data</h1>
+	<h1>AJAX Test - Json Format Data</h1>
 	
 	<button>데이터 보내기(post, delete, put)</button>
 	<div id = "data"></div>

@@ -53,7 +53,7 @@ public class ApiController {
 	@RequestMapping(value = "/post01", method = RequestMethod.POST)
 	public Object post01(GuestbookVo vo) {
 		// service - > repository : db insert 성공한 후, 
-		vo.setNo(1L);
+		vo.setNo(3L);
 		vo.setPassword("");
 		
 		return JsonResult.success(vo);
@@ -62,6 +62,7 @@ public class ApiController {
 	@ResponseBody
 	@RequestMapping(value = "/post02", method = RequestMethod.POST)
 	public Object post02(@RequestBody GuestbookVo vo) {	//json 객체를 자바 객체로 변환
+		// 메시지 컨버터
 		// service - > repository : db insert 성공한 후, 
 		vo.setNo(1L);
 		vo.setPassword("");
