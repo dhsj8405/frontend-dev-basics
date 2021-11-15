@@ -65,7 +65,6 @@ $(function(){
 							$('#password-delete').val('').focus();
 							return;
 						}
-						
 						// 삭제가 된 경우
 						$('#list-guestbook li[data-no=' + response.data + ']').remove();
 						dialogDelete.dialog('close');

@@ -16,6 +16,7 @@ import com.douzone.ch08.controller.vo.GuestbookVo;
 @Controller
 @RequestMapping("/api/guestbook")
 public class GuestbookController {
+
 	
 	@ResponseBody
 	@RequestMapping("/add")
@@ -30,7 +31,7 @@ public class GuestbookController {
 	@ResponseBody
 	@RequestMapping("/list")
 	public JsonResult ex2(@RequestParam(value="sn", required=true, defaultValue ="-1")Long no) {
-		// vo = guestbookService.findAll(no)를 사용해서 리스트 가져오기
+		//GuestbookVo vo = guestbookService.findAll(no);
 		
 		List<GuestbookVo> list = new ArrayList<>();
 		GuestbookVo vo = new GuestbookVo();
